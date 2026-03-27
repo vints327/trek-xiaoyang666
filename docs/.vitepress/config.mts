@@ -34,7 +34,7 @@ export default defineConfig({
       { text: '尼泊尔徒步', link: '/nepal/' }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' }
+      { icon: 'github', link: 'https://github.com/vints327/trek-xiaoyang666' }
     ],
     search: {
       provider: 'local'
@@ -87,3 +87,4 @@ export default defineConfig({
     }
   }
 })
+
