@@ -20,23 +20,24 @@ npm run docs:build
 - 自定义首页视觉与主题色
 - Open Graph / Twitter SEO 元信息
 - 本地搜索
-- Giscus 评论组件占位
-- Plausible 统计脚本占位
+- Giscus 评论已接入 GitHub Discussions
+- Plausible 统计脚本已预留
 - GitHub Pages 自动部署工作流
 
-## 上线前需要替换的配置
+## 当前线上配置
+
+### GitHub 仓库
+
+- 仓库：`https://github.com/vints327/trek-xiaoyang666`
+- Pages 目标域名：`trek.xiaoyang666.cc`
 
 ### Giscus
 
-请在 `docs/.vitepress/theme/components/GiscusComments.vue` 中替换：
+当前已写入真实值：
 
-- `data-repo`
-- `data-repo-id`
-- `data-category-id`
-
-### GitHub 链接
-
-请在 `docs/.vitepress/config.mts` 中把 GitHub 地址改成真实仓库地址。
+- repo: `vints327/trek-xiaoyang666`
+- category: `Q&A`
+- mapping: `pathname`
 
 ### 统计脚本
 
@@ -49,7 +50,7 @@ npm run docs:build
 
 ## GitHub Pages 发布
 
-1. 初始化并推送到 GitHub。
+1. 将本地提交推送到 GitHub。
 2. 在仓库 `Settings -> Pages` 中选择 `GitHub Actions`。
 3. 在 DNS 中给 `trek.xiaoyang666.cc` 添加 `CNAME` 记录，指向 `vints327.github.io`。
 4. 等待 GitHub Pages 完成证书签发。
@@ -58,4 +59,3 @@ npm run docs:build
 
 - `docs/outdoor/`：户外知识体系
 - `docs/nepal/`：尼泊尔徒步专题
-
